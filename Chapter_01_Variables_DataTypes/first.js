@@ -101,7 +101,7 @@ console.log(typeof sym);
 // NON PRIMITIVE 
 // OBJECT 
 
-const Student ={
+const Student = {
     // key   :   Value 
     fullName1: "jitendra Lowanshi",
     age3 : 32,
@@ -114,5 +114,6 @@ console.log(Student);
 console.log(typeof Student);
 console.log(Student.fullName1);
 console.log("age is", Student.age3);
+console.log(Student.cgpa);
 
 // practical Qs 
