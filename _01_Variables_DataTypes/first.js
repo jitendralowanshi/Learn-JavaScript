@@ -2,6 +2,7 @@
 // Variable are containers for data 
 // javascript is a dynamically typed language 
 
+
 name = "jitendra";
 age2 = 24;
 price1 = 98.50;
