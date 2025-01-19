@@ -1,6 +1,9 @@
 // variavle in JavaScript
 // Variable are containers for data 
 // javascript is a dynamically typed language 
+// val 
+// let
+// const
 
 
 name = "jitendra";
