@@ -19,13 +19,14 @@ const FunctionName = (val1, val2) => {
 
  */
 
-// FUNCTION ONE 
+
+// FIRST FUNCTION
 function myFunction() {
     console.log("Hello!");
     console.log("bonjor");
 }
 
-// FUNCTION SECOND 
+// SECOND FUNCTION 
 function mySecFunction(name, val) {
     console.log("this is my second function");
     console.log(name, val);
@@ -49,32 +50,37 @@ console.log(totalSumIs);
 
 // =============================================================
 // AROOW FUNCTION 
+//No argument function 
+
 const printello = () => {
     console.log("hello");
 }
 printello();
 
+
+
 // fun one 
+//Args function 
 const sumIs = (a, b) => {
     s = a + b;
     return s;
 }
-
 // function call 
 let s1 = sumIs(10, 88);
 console.log(sumIs);
-console.log("total sum is : ",s1);
+console.log("total sum is : ", s1);
+
 
 
 // second fun 
 const mulIs = (a, b) => {
-    m = a * b;
+    m = a * b; 
     return m;
 }
-
+// function call 
 let m1 = mulIs(10, 5);
 // function defination mulIs
 console.log(mulIs);
-console.log("multiplication is :",m1);
+console.log("multiplication is :", m1);
 
 
