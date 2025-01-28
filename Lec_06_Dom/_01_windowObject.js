@@ -5,3 +5,10 @@
  It is a global object with lots of propreties & methods
  
  */
+
+
+//  console.log(window);
+console.dir(document.body);
+console.log(document)
+
+console.log(document.head);
