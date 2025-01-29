@@ -51,7 +51,7 @@ const  Pi = 3.14
 
 
 /*
-// DATA TYPES IN JAVASCRIPT 
+// 8 DATA TYPES IN JAVASCRIPT 
 primitive data types 
 
 1> Number
@@ -61,7 +61,13 @@ primitive data types
 5> Null
 6> bigint
 7> Symbol
+
+Non primitive data types 
+8> object
+
 */
+
+
 
 //1>  NUMBER 
 let Age = 24;
