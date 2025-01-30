@@ -54,7 +54,7 @@ console.log(totalSumIs);
 
 const printello = () => {
     console.log("hello");
-}
+};
 printello();
 
 

@@ -1,0 +1,7 @@
+#box{
+    height: 250px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
