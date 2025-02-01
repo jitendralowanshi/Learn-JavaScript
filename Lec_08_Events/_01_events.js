@@ -1,4 +1,11 @@
 /**
+ three types of event 
+ 1> Inline Event
+ 2> Event Object
+ 3> Event Listener     //this is most useful 
+ 
+
+
  * EVENTS - 
  The change in the state of an object is known as an Event
  Events are fired to notify code of "intresting change " that may affect code execution.
