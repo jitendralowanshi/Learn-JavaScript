@@ -18,3 +18,7 @@ Non primitive data types
 8> object
 
 */
+
+let a = 20;
+let b = ++a;
+console.log(a+b);
