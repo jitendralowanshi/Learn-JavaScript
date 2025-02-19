@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #5D8736;
     text-align: center;
@@ -13,25 +14,44 @@ body {
     align-items: center;
 }
 
-/* .container {
+.container {
 
-} */
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .game {
     /* background-color: red;    */
-    height: 70vh;
-    width: 30vw;
+    height: 350px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
     gap: 5px;
-        
 }
+
 .box {
-    height: 100px;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    border: none;
+    color: red;
+    font-size: 8vmin;
+    background-color: black;
+}
+
+.reset-btn button {
+    height: 25px;
     width: 100px;
     border-radius: 10px;
+    border: none;
+    color: blue;
+    font-weight: bolder;
+    background-color: peachpuff;
+    
 }
-
-
-
