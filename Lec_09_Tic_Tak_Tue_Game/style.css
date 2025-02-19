@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 
+
 .flex {
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ body {
 
 .game {
     /* background-color: red;    */
-    height: 350px;
+    height: 300px;
     width: 250px;
     display: flex;
     flex-wrap: wrap;
@@ -43,15 +44,44 @@ body {
     color: red;
     font-size: 8vmin;
     background-color: black;
+    cursor: pointer;
 }
 
 .reset-btn button {
-    height: 25px;
-    width: 100px;
+    height: 30px;
+    width: 150px;
     border-radius: 10px;
     border: none;
     color: blue;
     font-weight: bolder;
     background-color: peachpuff;
-    
+    /* margin-top: 20px; */
+    cursor: pointer;
 }
+
+.msg-container {
+    height: 100px;
+    /* background-color: red; */
+    margin-top: 10px;
+
+}
+.new-btn {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    background-color: peachpuff;
+    cursor: pointer;
+}
+
+.msg {
+    color: blue;
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+

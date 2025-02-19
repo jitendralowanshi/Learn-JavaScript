@@ -1,9 +1,14 @@
 let boxes = document.querySelectorAll(".box");
-let resetBtn = document.querySelector(".reset-btn")
+let resetBtn = document.querySelector(".reset-btn");
+let newGameBtn = document.querySelector(".new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector(".msg");
 
+// first try o after turn x
 let turnO = true;
 
-let arr = [
+// game winning positions 
+let winPattern = [
 
     [0,1,2],
     [3,4,5],
@@ -16,6 +21,7 @@ let arr = [
 
 ];
 
+// oneclick event handle 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         console.log("box was clicked");
@@ -28,8 +34,73 @@ boxes.forEach((box) => {
             box.innerText = "X";
             turnO = true;
         }
-        box.disabled = true;
-        
 
+        box.disabled = true;
+        // call checkWinner method 
+        checkWinner();
     });
 });
+
+
+// reset game function 
+const resetGame = () => {
+    turnO = true;
+    enableBoxes();
+    msgContainer.classList.add("hide");
+};
+
+// disabled boxes after win the game 
+const disableBoxes = () => {
+    for(let box of boxes) {
+        box.disabled = true;
+    }
+};
+
+const enableBoxes = () => {
+    for(let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
+    }
+};
+
+// create showWinner method
+const showWinner = (winner) => {
+    msg.innerText = `Congratulations, Winner is ${winner}`;
+    msgContainer.classList.remove("hide");
+    disableBoxes();
+};
+
+
+// winner check function 
+const checkWinner = () => {
+    for(let pattern of winPattern) {
+
+        // print krwa kr dekha tha message ko 
+        // console.log(pattern[0], pattern[1], pattern[2]);
+        // console.log(
+        //     let pos1Val = boxes[pattern[0]].innerText,
+        //     let pos2Val = boxes[pattern[1]].innerText, 
+        //     let pos3Val = boxes[pattern[2]].innerText
+        // );
+
+            let pos1Val = boxes[pattern[0]].innerText;
+            let pos2Val = boxes[pattern[1]].innerText;
+            let pos3Val = boxes[pattern[2]].innerText;
+            
+            if(pos1Val != "" && pos2Val != "" && pos3Val != "") {
+                if(pos1Val === pos2Val && pos2Val === pos3Val) {
+                    console.log("Winner", pos1Val);
+                    // call show winner method 
+                    showWinner(pos1Val);
+                }
+            }
+
+
+    }
+
+    resetBtn.addEventListener("click", resetGame);
+    newGameBtn.addEventListener("click", resetGame);
+
+};
+
+
